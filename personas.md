@@ -42,7 +42,7 @@ Mitch is a young man who is fresh out of college and currently playing as a lead
 
 *40, female, mother*
 
-Taylor is a stay at home mother of two kids. She likes to cook at home and often attends cooking classes with friends. Her favourite thing to cook is desserts however, she has an allery and sometimes has trouble finding desserts that she can eat.
+Taylor is a stay at home mother of two kids. She likes to cook at home and often attends cooking classes with friends. Her favourite thing to cook is desserts however, she has an allergy and sometimes has trouble finding desserts that she can eat.
 
 **Personal Goals**
 

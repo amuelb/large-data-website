@@ -1,0 +1,9 @@
+#http://robotstxt.org
+
+#show search engine where to find your sitemap
+Sitemap: http://amuelb.github.io/large-data-website/sitemap.xml
+
+User-Agent: *
+
+#block imgs from showing up in search results
+#Disallow: /img

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!---
+sitemap.xml should be in the root of your domain 
+the same location as your index.html
+--->
+
+   <url>
+      <loc>http://www.amuelb.github.io/large-data-website</loc>
+      <lastmod>2013-10-14</lastmod>
+      <changefreq>monthly</changefreq>
+	  <!--
+	   change frequency: suggest how often Google should spider the page.
+	   - never
+	   - yearly
+	   - monthly
+	   - weekly
+	   - daily
+	   - hourly
+	   - always
+	   -->
+      <priority>0.8</priority>
+	  <!-- how important is this page to your website? = 1.0 > 0.1 
+	  default = 0.5
+	  -->
+   </url>
+	
+	<url>
+	<loc>http://amuelb.github.io/large-data-website/baked-desserts.html</loc>
+</urlset> 

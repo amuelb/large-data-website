@@ -133,7 +133,7 @@
 						<input type="radio" name="type">
 						Frozen Desserts</li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/large-data-website/baked-desserts.html';" >
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %}>
 						Baked Desserts</li>
 					</a>
 					<li>

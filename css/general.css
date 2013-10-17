@@ -555,6 +555,7 @@ html input[disabled] {
 input[type="radio"] {
   padding: 0;
   box-sizing: border-box;
+  margin-left:-2.5em;
 }
 
 input[type="search"] {
@@ -638,7 +639,7 @@ input[type="search"] {
 
 input[type="radio"] {
 	display:inline;
-  margin-right: 2px;
+  margin-right: 6px;
   /* IE8-9 */
   
 
@@ -677,10 +678,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .checkbox {
   display: block;
   min-height: 20px;
-  padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  vertical-align: middle;
+  text-align:left;
 }
 
 .radio label,
@@ -696,7 +696,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
-  margin-left: -20px;
 }
 
 .radio + .radio,
@@ -707,17 +706,15 @@ input[type="number"]::-webkit-inner-spin-button {
 .radio-inline,
 .checkbox-inline {
   display: inline-block;
-  padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
-  vertical-align: middle;
+  text-align:left;
   cursor: pointer;
 }
 
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;
-  margin-left: 10px;
 }
 
 input[type="radio"][disabled],

@@ -7,6 +7,74 @@ body {
 }
 
 
+/*////////
+skiplinks
+////////*/
+.skiplinks {
+	margin:0;
+	padding:0;
+	position:absolute;
+	z-index: 3000;
+	width: 100%;
+	
+	font-size: 1.25rem;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.skiplinks a,
+.skiplinks a:link,
+.skiplinks a:visited {
+	padding: 0.75em 1em;
+	position:absolute;
+	top: -10em;
+	
+	background-color:#000;
+	
+	color:#fff;
+	text-decoration:none;
+}
+
+.skiplinks a:focus{
+	top:0;
+}
+
+a,
+a:link,
+a:visited {
+	outline: none;
+}
+
+a:hover,
+a:active {
+	outline: none;
+}
+
+a:focus {
+	outline: 2px solid #000;
+}
+/*////////
+--skiplinks
+////////*/
+
+.left {
+	text-align:left;
+	font-size:14px;
+	font-weight: bold;
+	padding: 1.2em 0 0 1em;
+	color: #fff;
+	text-decoration: none;
+}
+
+.left a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.left a:hover{
+	color: #C00;
+}
+
 h3 {
 	margin-top: .3em;
 	font-family: 'Pathway Gothic One', sans-serif;

@@ -27,26 +27,42 @@
 <!--img size - recommended: 120x120; -->
 <meta property="twitter:image" content="http://amuelb.github.io/desserts.jpg">
 <meta property="twitter:description" content="Thousands of Dessert Recipes">
-
-
 </head>
 
 <body>
+
+<!-- Skip Links
+    ================================================== -->
+<ul class="skiplinks">
+	<li><a href="#main">Skip to primary content</a></li>
+	<li><a href="#complementary">Skip to secondary content</a></li>
+	<li><a href="#nav">Skip to navigation content</a></li>
+</ul>
+<!--/skiplinks-->
+
+
+
+
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			<a class="navbar-brand" href="{{site.baseurl}}/index.html">DESSERTs</a> </div>
 		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
+			
+			<ul class="nav navbar-nav" role="navigation" id="navigation">
 				<li class="active"><a href="{{site.baseurl}}/index.html">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
+			
 		</div>
 		<!--/.nav-collapse --> 
 	</div>
 </div>
+
+
+
 
 <!-- Carousel
     ================================================== -->
@@ -72,7 +88,7 @@
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>Desserts for the Healthy.</h1>
-					<p>Enjoy some sweet treats that are low calorie and healthy.</p> 
+					<p>Enjoy some sweet treats that are low calorie and healthy.</p>
 					<p>All the same good tastes without hidden fats!</p>
 				</div>
 			</div>
@@ -81,19 +97,25 @@
 			<div class="container">
 				<div class="carousel-caption">
 					<h1>desserts for Occassion</h1>
-					<p>Making sure you bring the right dessert to the right event.</p> 
-					<p>Large portioned desserts are best for feeding large groups of people.</p> 
+					<p>Making sure you bring the right dessert to the right event.</p>
+					<p>Large portioned desserts are best for feeding large groups of people.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
 <!-- /.carousel -->
-<div class="center">
-	<h3>What are you looking for?</h3>
-	<input type="search">
-</div>
-<div class="grid">
+
+
+
+<!-- Search Nav
+    ================================================== -->
+
+	<div class="center" role="complementary" id="complementary">
+		<h3>What are you looking for?</h3>
+		<input type="search">
+	</div>
+	<div class="grid">
 	<div class="unit unit-s-1 unit-m-hidden unit-l-hidden">
 		<div class="unit-spacer">
 			<section class="ac-container">
@@ -205,16 +227,27 @@
 			</div>
 		</div>
 	</div>
-	{{content}} 
-	</div>
-<footer> © Copyright Desserts 2013 </footer>
+
+<!-- /searchnav-->
+
+
+<!-- body content
+    ================================================== -->
+{{content}}
+<!--/bodycontent-->
+</div>
+
+
+
+<!-- footer
+    ================================================== -->
+<footer><div class="left"><a href="#top">Top</a></div> © Copyright Desserts 2013 </footer>
+
+
 
 <!-- Bootstrap core JavaScript
-    ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
-
+    ================================================== -->  
 <script src="{{site.baseurl}}/js/jquery.js"></script> 
 <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
-
 </body>
 </html>

@@ -71,8 +71,9 @@ a:focus {
 	text-decoration: none;
 }
 
-.left a:hover{
+.left a:hover, a:focus{
 	color: #C00;
+	outline: none;
 }
 
 h3 {
@@ -88,8 +89,9 @@ h3 a{
 	color: #d94a3d;
 }
 
-h3 a:hover{
+h3 a:hover, a:focus{
 	opacity: 0.7;
+	outline: none;
 }
 
 @media only screen and (max-width: 38em) {
@@ -159,8 +161,9 @@ h3 a:hover{
 	color: #666;
 	font-weight: bold;
 }
-.type-list a:hover{
+.type-list a:hover, a:focus{
 	opacity: 0.7;
+	outline: none;
 }
 .type-list li{
 	margin: auto;
@@ -208,20 +211,15 @@ h3 a:hover{
 	line-height: 33px;
 	font-size: 16px;
 	background: #ffffff;
-	background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
-	background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
 	box-shadow: 
 		0px 0px 0px 1px rgba(155,155,155,0.3), 
 		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
 		0px 2px 2px rgba(0,0,0,0.1);
 }
 .ac-container label:hover{
-	background: #fff;
+	background: #333;
+	color: #fff;
+	text-shadow:none;
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
@@ -239,11 +237,8 @@ h3 a:hover{
 	width: 24px;
 	height: 24px;
 	top: 7px;
-	background: transparent url(img/arrow_down.png) no-repeat center center;	
 }
-.ac-container input:checked + label:hover:after{
-	background-image: url(../img/arrow_up.png);
-}
+
 .ac-container input{
 	display: none;
 }
@@ -586,7 +581,8 @@ a:focus {
 }
 
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 0;
 }
 
@@ -601,7 +597,8 @@ a:hover {
 	text-decoration:underline;
 	font-weight: bold;
 }
-.page-numbers a:hover{
+.page-numbers a:hover,
+a:focus{
 	opacity: 0.7;
 }
 
@@ -1765,6 +1762,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-bottom-color: #428bca;
 }
 
+.nav a:focus{
+	outline:none;
+}
 .nav a:hover .caret {
   border-top-color: #2a6496;
   border-bottom-color: #2a6496;

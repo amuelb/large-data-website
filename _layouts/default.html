@@ -8,8 +8,7 @@
 <meta name="description" content="Thousands of Dessert Recipes">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="Amy Brown">
 
 <!--facebook-->
 <meta property="og:type" content="article">
@@ -29,14 +28,16 @@
 <meta property="twitter:description" content="Thousands of Dessert Recipes">
 </head>
 
-<body>
+<body id="top">
 
 <!-- Skip Links
     ================================================== -->
 <ul class="skiplinks">
 	<li><a href="#main">Skip to primary content</a></li>
 	<li><a href="#complementary">Skip to secondary content</a></li>
-	<li><a href="#nav">Skip to navigation content</a></li>
+	<li><a href="#navigation">Skip to navigation content</a></li>
+	<li><a href="#coments">Skip to comments section</a></li>
+	<li><a href="#search">Skip to search bar</a></li>
 </ul>
 <!--/skiplinks-->
 
@@ -52,8 +53,8 @@
 			
 			<ul class="nav navbar-nav" role="navigation" id="navigation">
 				<li class="active"><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">Post a Recipe</a></li>
 			</ul>
 			
 		</div>
@@ -77,8 +78,8 @@
 		<div class="item active"> <img src="img/slide1.jpg" alt="First slide">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Desserts Early Riser.</h1>
-					<p>Have a flakey light weight dessert for a day starter.</p>
+					<h2>Desserts Early Riser.</h2>
+					<p>Have a flaky light weight dessert for a day starter.</p>
 					<p>Served best with a hot, steaming cup of coffee!</p>
 				</div>
 			</div>
@@ -87,7 +88,7 @@
 		<div class="item"> <img src="img/slide2.jpg"  alt="Second slide">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>Desserts for the Healthy.</h1>
+					<h2>Desserts for the Healthy.</h2>
 					<p>Enjoy some sweet treats that are low calorie and healthy.</p>
 					<p>All the same good tastes without hidden fats!</p>
 				</div>
@@ -96,14 +97,14 @@
 		<div class="item"> <img src="img/slide3.jpg" alt="Third slide">
 			<div class="container">
 				<div class="carousel-caption">
-					<h1>desserts for Occassion</h1>
+					<h2>desserts for Occasion</h2>
 					<p>Making sure you bring the right dessert to the right event.</p>
 					<p>Large portioned desserts are best for feeding large groups of people.</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> </div>
+	</div> 
+</div>
 <!-- /.carousel -->
 
 
@@ -113,7 +114,7 @@
 
 	<div class="center" role="complementary" id="complementary">
 		<h3>What are you looking for?</h3>
-		<input type="search">
+		<input type="search" title="Search" role="search" id="search">
 	</div>
 	<div class="grid">
 	<div class="unit unit-s-1 unit-m-hidden unit-l-hidden">
@@ -165,63 +166,63 @@
 	<div class="unit unit-s-hidden legend">
 		<div class="unit-spacer">
 			<h3>What are you looking for?</h3>
-			<input type="search">
+			<input type="search" title="Search">
 			<div class="advanced-search">
 				<h4>Type of Dessert:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="frozen desserts">
 						Frozen Desserts</li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %}>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} title="baked desserts">
 						Baked Desserts</li>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="liqueur based desserts">
 						Liqueur Based</li>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="fruit based desserts">
 						Fruit Based</li>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="seasonal desserts">
 						Seasonal</li>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="low calorie desserts">
 						Low Calorie</li>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="peanut free desserts">
 						Peanut Free</li>
 					<li>
-						<input type="radio" name="type">
+						<input type="radio" name="type" title="lactose free desserts">
 						Lactose Free</li>
 				</ul>
 				<h4>Difficulty:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="difficulty">
+						<input type="radio" name="difficulty" title="beginner difficulty">
 						Beginner</li>
 					<li>
-						<input type="radio" name="difficulty">
+						<input type="radio" name="difficulty" title="intermediate difficulty">
 						Intermediate</li>
 					<li>
-						<input type="radio" name="difficulty">
+						<input type="radio" name="difficulty" title="advanced difficulty">
 						Advanced</li>
 				</ul>
 				<h4>Time:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="time">
+						<input type="radio" name="time" title="15 to 20 minutes">
 						15-20min</li>
 					<li>
-						<input type="radio" name="time">
+						<input type="radio" name="time" title="20 to 40 minutes">
 						20-40min</li>
 					<li>
-						<input type="radio" name="time">
+						<input type="radio" name="time" title="40 to 60 minutes">
 						40-60min</li>
 					<li>
-						<input type="radio" name="time">
+						<input type="radio" name="time" title="1 to 3 hours">
 						1-3h</li>
 					<li>
-						<input type="radio" name="time">
+						<input type="radio" name="time" title="4 or more hours">
 						4 or more hours</li>
 				</ul>
 			</div>

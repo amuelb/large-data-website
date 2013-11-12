@@ -42,6 +42,7 @@ skiplinks
 a,
 a:link,
 a:visited {
+	color: #d94a3d;
 	outline: none;
 }
 

@@ -63,6 +63,30 @@
 </div>
 
 
+{% if page.show-404-carousel == true %}
+
+
+<!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide"> 
+	
+	<div class="carousel-inner">
+		<div class="item active"> <img src="img/40.jpg" alt="First slide">
+			<div class="container">
+				<div class="carousel-caption-black">
+					<h2>Not Found</h2>
+					<p>This page looked so delicious</p>
+					<p>it has been eaten by the internet!</p>
+				</div>
+			</div>
+			<div class="container"> </div>
+		</div>
+	</div> 
+</div>
+<!-- /.carousel -->
+
+
+{% else %}
 
 
 <!-- Carousel
@@ -106,6 +130,8 @@
 	</div> 
 </div>
 <!-- /.carousel -->
+
+{% endif %}
 
 
 
@@ -183,52 +209,52 @@
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="baked desserts">
 						<label for="baked desserts">Baked Desserts</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="liqueur based desserts">
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="liqueur based desserts">
 						<label for="liqueur based desserts">Liqueur Based</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="fruit based desserts">
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="fruit based desserts">
 						<label for="fruit based desserts">Fruit Based</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="seasonal desserts">
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="seasonal desserts">
 						<label for="seasonal desserts">Seasonal</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="low calorie desserts">
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="low calorie desserts">
 						<label for="low calorie desserts">Low Calorie</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="peanut free desserts">
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="peanut free desserts">
 						<label for="peanut free desserts">Peanut Free</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="lactose free desserts">
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="lactose free desserts">
 						<label for="lactose free desserts">Lactose Free</label></li>
 				</ul>
 				<h4>Difficulty:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="beginner difficulty">
+						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="beginner difficulty">
 						<label for="beginner difficulty">Beginner</label></li>
 					<li>
-						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="intermediate difficulty">
+						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" id="intermediate difficulty">
 						<label for="intermediate difficulty">Intermediate</label></li>
 					<li>
-						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="advanced difficulty">
+						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="advanced difficulty">
 						<label for="advanced difficulty">Advanced</label></li>
 				</ul>
 				<h4>Time:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="15 to 20 minutes">
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="15 to 20 minutes">
 						<label for="15 to 20 minutes">15-20min</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="20 to 40 minutes">
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="20 to 40 minutes">
 						<label for="20 to 40 minutes">20-40min</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="40 to 60 minutes">
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="40 to 60 minutes">
 						<label for="40 to 60 minutes">40-60min</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="1 to 3 hours">
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="1 to 3 hours">
 						<label for="1 to 3 hours">1-3h</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="4 or more hours">
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="4 or more hours">
 						<label for="4 or more hours">4 or more hours</label></li>
 				</ul>
 			</div>

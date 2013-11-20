@@ -5,10 +5,7 @@
   text-rendering: optimizespeed;
   margin: auto;
 }
-.opera-only :-o-prefocus,
-.grid {
-  word-spacing: -0.43em;
-}
+
 .flex-img {
 	display: block;
 	width: 100%;	
@@ -20,7 +17,6 @@
 
 .unit {
   display: inline-block;
-  *display: inline;
   zoom: 1;
   letter-spacing: normal;
   text-rendering: auto;

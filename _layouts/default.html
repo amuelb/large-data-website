@@ -4,6 +4,9 @@
 <title>{{page.title}}</title>
 <link href="{{site.baseurl}}/css/general.css" rel="stylesheet">
 <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+
+<script src="{{site.baseurl}}/js/modernizr.js"></script> 
+
 <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 <meta name="description" content="Thousands of Dessert Recipes">
 <meta charset="utf-8">
@@ -206,56 +209,56 @@
 						<input type="radio" name="type" id="frozen">
 						<label for="frozen">Frozen Desserts</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="baked desserts">
-						<label for="baked desserts">Baked Desserts</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="baked">
+						<label for="baked">Baked Desserts</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="liqueur based desserts">
-						<label for="liqueur based desserts">Liqueur Based</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="liqueur">
+						<label for="liqueur">Liqueur Based</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="fruit based desserts">
-						<label for="fruit based desserts">Fruit Based</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="fruit">
+						<label for="fruit">Fruit Based</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="seasonal desserts">
-						<label for="seasonal desserts">Seasonal</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="seasonal">
+						<label for="seasonal">Seasonal</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="low calorie desserts">
-						<label for="low calorie desserts">Low Calorie</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="low">
+						<label for="lows">Low Calorie</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="peanut free desserts">
-						<label for="peanut free desserts">Peanut Free</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="peanut">
+						<label for="peanut">Peanut Free</label></li>
 					<li>
-						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="lactose free desserts">
-						<label for="lactose free desserts">Lactose Free</label></li>
+						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="lactose">
+						<label for="lactose">Lactose Free</label></li>
 				</ul>
 				<h4>Difficulty:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="beginner difficulty">
-						<label for="beginner difficulty">Beginner</label></li>
+						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="beginner">
+						<label for="beginner">Beginner</label></li>
 					<li>
-						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" id="intermediate difficulty">
-						<label for="intermediate difficulty">Intermediate</label></li>
+						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" id="intermediate">
+						<label for="intermediate">Intermediate</label></li>
 					<li>
-						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="advanced difficulty">
-						<label for="advanced difficulty">Advanced</label></li>
+						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="advanced">
+						<label for="advanced">Advanced</label></li>
 				</ul>
 				<h4>Time:</h4>
 				<ul>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="15 to 20 minutes">
-						<label for="15 to 20 minutes">15-20min</label></li>
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="15-20">
+						<label for="15-20">15-20min</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="20 to 40 minutes">
-						<label for="20 to 40 minutes">20-40min</label></li>
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="20-40">
+						<label for="20-40">20-40min</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="40 to 60 minutes">
-						<label for="40 to 60 minutes">40-60min</label></li>
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="40-60">
+						<label for="40-60">40-60min</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="1 to 3 hours">
-						<label for="1 to 3 hours">1-3h</label></li>
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="1-3 ">
+						<label for="1-3">1-3h</label></li>
 					<li>
-						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="4 or more hours">
-						<label for="4 or more hours">4 or more hours</label></li>
+						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="4-more">
+						<label for="4-more">4 or more hours</label></li>
 				</ul>
 			</div>
 		</div>

@@ -2,18 +2,6 @@ html{
 	min-width: 240px;
 }
 
-body {
-  padding-top: 50px;
-  margin:auto;
-  max-width:700px;
-}
-
-@media only screen and (min-width:240px) {
-	body {
-		max-width: none;
-		}	
-}
-
 /*////////
 skiplinks
 ////////*/

@@ -337,7 +337,7 @@ h3 a:hover, a:focus{
 .carousel-inner > .item {
   position: relative;
   display: none;
-  max-height: 400px;
+  max-height: 250px;
   min-height:200px;
   -webkit-transition: 0.6s ease-in-out left;
           transition: 0.6s ease-in-out left;
@@ -346,7 +346,7 @@ h3 a:hover, a:focus{
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  height: 250px;
+  height: 100%;
   width: 100%;
   min-width: 610px;
   line-height: 1;

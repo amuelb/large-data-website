@@ -323,6 +323,7 @@ h3 a:hover, a:focus{
 
   /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
   margin-top: 65px;
+  
 }
 
 /* Carousel code */
@@ -345,7 +346,7 @@ h3 a:hover, a:focus{
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  height: auto;
+  height: 250px;
   width: 100%;
   min-width: 610px;
   line-height: 1;

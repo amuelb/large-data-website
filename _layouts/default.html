@@ -65,11 +65,12 @@
 			<a class="navbar-brand" href="{{site.baseurl}}/index.html">DESSERTs</a> </div>
 		<div class="collapse navbar-collapse">
 			
-			<ul class="nav navbar-nav" role="navigation" id="navigation">
-				<li class="active"><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li><a href="{{site.baseurl}}/baked-desserts.html">Categories</a></li>
-				<li><a href="{{site.baseurl}}/cheesecake.html">Post a Recipe</a></li>
+			<nav role="navigation" id="navigation">
+			<ul class="nav navbar-nav">
+				<li {% if page.url contains 'index' %}class="active"{% endif %}><a href="{{site.baseurl}}/index.html">Home</a></li>
+				<li {% if page.url contains 'baked-desserts' %}class="active"{% endif %}><a href="{{site.baseurl}}/baked-desserts.html">Categories</a></li>
 			</ul>
+			</nav>
 			
 		</div>
 		<!--/.nav-collapse --> 
@@ -153,7 +154,7 @@
 <!-- Search Nav
     ================================================== -->
 
-	<form class="center" role="search" id="search">
+	<form class="center" role="search">
 		<h3>What are you looking for?</h3>
 		<input type="search" title="Search">
 		
@@ -310,6 +311,5 @@
 
   ga('create', 'UA-46044211-1', 'amuelb.github.io');
   ga('send', 'pageview');
-
 </script>
 </html>

@@ -5,11 +5,7 @@
 <link href="{{site.baseurl}}/css/normalize.css" rel="stylesheet">
 <link href="{{site.baseurl}}/css/general.css" rel="stylesheet">
 <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
-
-
-
-<script src="{{site.baseurl}}/js/modernizr.js"></script> 
-
+<script src="{{site.baseurl}}/js/modernizr.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 <meta name="description" content="Thousands of Dessert Recipes">
 <meta charset="utf-8">
@@ -33,13 +29,13 @@
 <meta property="twitter:image" content="http://amuelb.github.io/desserts.jpg">
 <meta property="twitter:description" content="Thousands of Dessert Recipes">
 
- <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-	
+
 </head>
 
 <body id="top">
@@ -53,38 +49,37 @@
 	<li><a href="#comments">Skip to comments section</a></li>
 	<li><a href="#search">Skip to search bar</a></li>
 </ul>
-<!--/skiplinks-->
 
 
 
-
+<!-- Navigation
+    ================================================== -->
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			<a class="navbar-brand" href="{{site.baseurl}}/index.html">DESSERTs</a> </div>
 		<div class="collapse navbar-collapse">
-			
 			<nav role="navigation" id="navigation">
-			<ul class="nav navbar-nav">
-				<li {% if page.url contains 'index' %}class="active"{% endif %}><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li {% if page.url contains 'baked-desserts' %}class="active"{% endif %}><a href="{{site.baseurl}}/baked-desserts.html">Categories</a></li>
-			</ul>
+				<ul class="nav navbar-nav">
+					<li {% if page.url contains 'index' %}class="active"{% endif %}>
+					<a href="{{site.baseurl}}/index.html">Home</a>
+					</li>
+					<li {% if page.url contains 'baked-desserts' %}class="active"{% endif %}>
+					<a href="{{site.baseurl}}/baked-desserts.html">Categories</a>
+					</li>
+				</ul>
 			</nav>
-			
 		</div>
-		<!--/.nav-collapse --> 
 	</div>
 </div>
 
 
+
+<!-- Carousel (404)
+    ================================================== --> 
 {% if page.show-404-carousel == true %}
-
-
-<!-- Carousel
-    ================================================== -->
-<div id="myCarousel" class="carousel slide"> 
-	
+<div id="myCarousel" class="carousel slide">
 	<div class="carousel-inner">
 		<div class="item active"> <img src="img/40.jpg" alt="First slide">
 			<div class="container">
@@ -94,19 +89,16 @@
 					<p>that it was eaten by the internet!</p>
 				</div>
 			</div>
-			
 		</div>
-	</div> 
+	</div>
 </div>
 
-<!-- /.carousel -->
 
 
-{% else %}
 
-
-<!-- Carousel
+<!-- Carousel (main)
     ================================================== -->
+{% else %} 
 <div id="myCarousel" class="carousel slide"> 
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
@@ -143,31 +135,26 @@
 				</div>
 			</div>
 		</div>
-	</div> 
-</div>
-<!-- /.carousel -->
-
-{% endif %}
+	</div>
+</div> 
+{% endif %} 
 
 
 
-<!-- Search Nav
+
+<!-- Search/Nav (Mobile)
     ================================================== -->
-
-	<form class="center" role="search">
-		<h3>What are you looking for?</h3>
-		<input type="search" title="Search">
-		
-	</form>
-	<div class="grid">
+<form class="center" role="search">
+	<h3>What are you looking for?</h3>
+	<input type="search" title="Search">
+</form>
+<div class="grid">
 	<div class="unit unit-s-1 unit-m-hidden unit-l-hidden">
 		<div class="unit-spacer">
 			<section class="ac-container">
-				
-					<form>
-						<input id="ac-1" name="accordion-1" type="checkbox" />
-						<label for="ac-1">Search by Type</label>
-					
+				<form>
+					<input id="ac-1" name="accordion-1" type="checkbox" />
+					<label for="ac-1">Search by Type</label>
 					<article class="ac-large">
 						<ul class="type-list">
 							<li><a href="{{site.baseurl}}/baked-desserts.html">Frozen Desserts</a></li>
@@ -180,8 +167,7 @@
 							<li><a href="{{site.baseurl}}/baked-desserts.html">Lactose Free</a></li>
 						</ul>
 					</article>
-					</form>
-				
+				</form>
 				<form>
 					<input id="ac-2" name="accordion-1" type="checkbox" />
 					<label for="ac-2">Search by Skill Level</label>
@@ -209,100 +195,124 @@
 			</section>
 		</div>
 	</div>
+	
+	
+	
+<!-- Search/Nav (fullscreen)
+    ================================================== -->	
 	<div class="unit unit-s-hidden legend">
 		<div class="unit-spacer" role="search" id="search">
 			<form>
-			<h3>What are you looking for?</h3>
-			<input type="search" title="imput search item">
+				<h3>What are you looking for?</h3>
+				<input type="search" title="imput search item">
 			</form>
 			<div class="advanced-search">
 				<h4>Type of Dessert:</h4>
 				<ul>
 					<li>
 						<input type="radio" name="type" id="frozen">
-						<label for="frozen">Frozen Desserts</label></li>
+						<label for="frozen">Frozen Desserts</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" {% if page.url contains 'baked-desserts' %}checked{% endif %} id="baked">
-						<label for="baked">Baked Desserts</label></li>
+						<label for="baked">Baked Desserts</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="liqueur">
-						<label for="liqueur">Liqueur Based</label></li>
+						<label for="liqueur">Liqueur Based</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="fruit">
-						<label for="fruit">Fruit Based</label></li>
+						<label for="fruit">Fruit Based</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="seasonal">
-						<label for="seasonal">Seasonal</label></li>
+						<label for="seasonal">Seasonal</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="low">
-						<label for="low">Low Calorie</label></li>
+						<label for="low">Low Calorie</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="peanut">
-						<label for="peanut">Peanut Free</label></li>
+						<label for="peanut">Peanut Free</label>
+					</li>
 					<li>
 						<input type="radio" name="type" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="lactose">
-						<label for="lactose">Lactose Free</label></li>
+						<label for="lactose">Lactose Free</label>
+					</li>
 				</ul>
 				<h4>Difficulty:</h4>
 				<ul>
 					<li>
 						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="beginner">
-						<label for="beginner">Beginner</label></li>
+						<label for="beginner">Beginner</label>
+					</li>
 					<li>
 						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';" id="intermediate">
-						<label for="intermediate">Intermediate</label></li>
+						<label for="intermediate">Intermediate</label>
+					</li>
 					<li>
 						<input type="radio" name="difficulty" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="advanced">
-						<label for="advanced">Advanced</label></li>
+						<label for="advanced">Advanced</label>
+					</li>
 				</ul>
 				<h4>Time:</h4>
 				<ul>
 					<li>
 						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="15-20">
-						<label for="15-20">15-20min</label></li>
+						<label for="15-20">15-20min</label>
+					</li>
 					<li>
 						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="20-40">
-						<label for="20-40">20-40min</label></li>
+						<label for="20-40">20-40min</label>
+					</li>
 					<li>
 						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="40-60">
-						<label for="40-60">40-60min</label></li>
+						<label for="40-60">40-60min</label>
+					</li>
 					<li>
 						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="1-3">
-						<label for="1-3">1-3h</label></li>
+						<label for="1-3">1-3h</label>
+					</li>
 					<li>
 						<input type="radio" name="time" onclick="document.location='{{site.baseurl}}/baked-desserts.html';"  id="4-more">
-						<label for="4-more">4 or more hours</label></li>
+						<label for="4-more">4 or more hours</label>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-
-<!-- /searchnav-->
-
-
-<!-- body content
-    ================================================== -->
-{{content}}
-<!--/bodycontent-->
+	
+	
+	
+<!-- Main Content
+================================================== --> 
+	{{content}} 
 </div>
 
 
 
-<!-- footer
+
+<!-- Footer
     ================================================== -->
-<footer><div class="left"><a href="#top">Top</a></div> © Copyright Desserts 2013 </footer>
+<footer>
+	<div class="left"><a href="#top">Top</a></div>
+	<p>© Copyright Desserts 2013</p>
+</footer>
 
 
 
 <!-- Bootstrap core JavaScript
-    ================================================== -->  
+    ================================================== --> 
 <script src="{{site.baseurl}}/js/jquery.js"></script> 
 <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
 </body>
 
 
+
 <!-- Google Analytics
-    ================================================== -->  
+    ================================================== -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

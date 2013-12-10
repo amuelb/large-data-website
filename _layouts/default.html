@@ -7,7 +7,7 @@
 <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
 <script src="{{site.baseurl}}/js/modernizr.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-<meta name="description" content="Thousands of Dessert Recipes">
+<meta name="description" content="{{page.meta}}">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Amy Brown">
@@ -62,10 +62,10 @@
 		<div class="collapse navbar-collapse">
 			<nav role="navigation" id="navigation">
 				<ul class="nav navbar-nav">
-					<li {% if page.url contains 'index' %}class="active"{% endif %}>
+					<li {% if page.url contains 'index' %}class="active" endif %}>
 					<a href="{{site.baseurl}}/index.html">Home</a>
 					</li>
-					<li {% if page.url contains 'baked-desserts' %}class="active"{% endif %}>
+					<li {% if page.url contains 'baked-desserts' %}class="active" endif %}>
 					<a href="{{site.baseurl}}/baked-desserts.html">Categories</a>
 					</li>
 				</ul>
